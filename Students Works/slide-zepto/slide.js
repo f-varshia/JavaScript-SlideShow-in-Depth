@@ -3,7 +3,7 @@ $(function(){
 	train=$('.slideshow .train');
 	
 	slidenav.click(function(){
-		alert(1);	
+		alert($(this).index());	
 	});
 
 });

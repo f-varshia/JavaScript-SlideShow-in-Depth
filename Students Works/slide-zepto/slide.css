@@ -49,6 +49,6 @@ div.slideshow ul.slidenav > li {
 div.slideshow ul.slidenav li:hover,
 div.slideshow ul.slidenav li.active {
 	background-color:#069;
-	height:20px;
-	margin-top:-6px;
+	height:18px;
+	margin-top:-4px;
 }

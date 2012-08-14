@@ -5,14 +5,17 @@
 }
 
 div.conteinar{
-	
+	border:1px solid red;
+	width:980px;	
+	margin:0 auto;
 }
 
 div.conteinar div.slideshow{
-	
+	border:1px solid blue;
+	width:480px;
+	height:320px;
 }
 
-
 div.conteinar div.train{
-	
+	border:1px solid orange;
 }

@@ -14,8 +14,19 @@ div.conteinar div.slideshow{
 	border:1px solid blue;
 	width:480px;
 	height:320px;
+	margin:0 auto;
+	overflow:hidden;
 }
 
 div.conteinar div.train{
 	border:1px solid orange;
+	width:5000px;
+	height:inherit;
+}
+
+div.conteinar div.train > div{
+	border:1px solid orange;
+	width:480px;
+	float:left;
+	height:inherit;
 }

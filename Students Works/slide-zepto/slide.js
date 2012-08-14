@@ -2,8 +2,10 @@ $(function(){
 	var slidenav=$('.slideshow .slidenav li'),
 	train=$('.slideshow .train');
 	
+	gotopic=function(n){
+		train.css({left:(-450*n)+'px'});
+	}
 	slidenav.click(function(){
-		train.css({left:'-900px'});
+		gotopic($(this).index());
 	});
-
 });

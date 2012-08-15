@@ -18,10 +18,12 @@ $(function(){
 		gotopic($(this).index());
 	});
 	next.click(nextf=function(){
-		gotopic(current+1);	
+		gotopic(current+1);
+		atuoplaystop();	
 	});
 	previous.click(function(){
-		gotopic(current-1);	
+		gotopic(current-1);
+		atuoplaystop();	
 	});
 	var iv=false;
 	atuoplaystart=function(){
@@ -33,6 +35,6 @@ $(function(){
 		clearInterval(iv);
 		iv=false;		
 	}
-	slideshow.mouseover(atuoplaystart);
-	slideshow.mouseout(atuoplaystop);
+	slideshow.mouseover(atuoplaystop);
+	slideshow.mouseout(atuoplaystart);
 });

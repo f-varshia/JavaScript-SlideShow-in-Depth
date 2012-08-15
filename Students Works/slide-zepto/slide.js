@@ -2,7 +2,8 @@ $(function(){
 	var slidenav=$('.slideshow .slidenav li'),
 	train=$('.slideshow .train'),
 	next=$('.next');
-	previous=$('.previous');	
+	previous=$('.previous'),
+	slideshow=$('.slideshow');	
 	current=0;
 	
 	gotopic=function(n){
@@ -22,6 +23,16 @@ $(function(){
 	previous.click(function(){
 		gotopic(current-1);	
 	});
-	
-	setInterval(nextf,1000);
+	var iv=false;
+	atuoplaystart=function(){
+		if(!iv)
+		iv=setInterval(nextf,1000);
+		return;		
+	}
+	atuoplaystop=function(){
+		clearInterval(iv);
+		iv=false;		
+	}
+	slideshow.mouseover(atuoplaystart);
+	slideshow.mouseout(atuoplaystop);
 });

@@ -18,19 +18,17 @@ $(function(){
 		gotopic($(this).index());
 	});
 	next.click(nextf=function(){
-		gotopic(current+1);
-		atuoplaystop();	
+		gotopic(current+1);	
 	});
 	previous.click(function(){
 		gotopic(current-1);
-		atuoplaystop();	
 	});
 	var iv=false;
-	atuoplaystart=function(){
+	(atuoplaystart=function(){
 		if(!iv)
 		iv=setInterval(nextf,1000);
 		return;		
-	}
+	})();
 	atuoplaystop=function(){
 		clearInterval(iv);
 		iv=false;		

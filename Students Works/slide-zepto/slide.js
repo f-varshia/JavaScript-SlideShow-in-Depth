@@ -16,10 +16,12 @@ $(function(){
 	slidenav.click(function(){
 		gotopic($(this).index());
 	});
-	next.click(function(){
+	next.click(nextf=function(){
 		gotopic(current+1);	
 	});
 	previous.click(function(){
 		gotopic(current-1);	
 	});
+	
+	setInterval(nextf,1000);
 });

@@ -52,3 +52,20 @@ div.slideshow ul.slidenav li.active {
 	height:18px;
 	margin-top:-4px;
 }
+div.slideshow div.previous,
+div.slideshow div.next {
+	width:30px;
+	height:30px;
+	position:absolute;
+	top:100px;
+	cursor:pointer;
+	background-image:url('../../images/arrow.png');
+	background-repeat:no-repeat;
+}
+div.slideshow div.previous {
+	left : 10px;
+}
+div.slideshow div.next {
+	right:10px;
+	background-position:-30px;
+}

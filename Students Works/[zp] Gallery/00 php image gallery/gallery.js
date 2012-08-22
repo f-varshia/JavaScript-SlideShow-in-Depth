@@ -4,8 +4,14 @@ Math.random = function (a,b){
 }
 $(function(){
 	$images=$('div.gallery a');
-			$images.animate({
-				left: Math.random(10,800),
-				top:Math.random(10,800)
+	$maxwi=window.innerWidth;
+	$maxhe=window.innerHeight;
+	for(var $i=0;$i< $images.length ;$i++){
+		(function(){
+			$images.eq($i).animate({
+				left: Math.random(10,$maxwi-200),
+				top:Math.random(10,$maxhe-200)
 			},500);
+		})($i);
+	}
 })

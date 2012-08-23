@@ -8,8 +8,23 @@ $(function(){
 	$maxhe=window.innerHeight;
 	$images.each(function(){
 		$(this).animate({
-			left: Math.random(10,$maxwi-200),
-			top:Math.random(10,$maxhe-200)
+			left:Math.random(100,$maxwi-200),
+			top:Math.random(100,$maxhe-200)
 		},500);
 	});
-})
+
+	$images.click(function(){
+		$left=parseInt($(this).css("left"));
+		$top=parseInt($(this).css("top"));
+		$movex= ($left <($maxwi/2)) ? 5 : -5;
+		$movey= ($top <($maxhe/2)) ? 5 : -5;
+		$(this).animate({
+			scale : [3, 3],
+			translateY : $movey+'px',
+			translateX : $movex+'px',
+			/*rotate: '360deg'*/
+		},2000);	
+		
+		return false;
+	});
+});

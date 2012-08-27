@@ -7,5 +7,13 @@ $(function(){
 				left:-100	
 			},500,'ease-out');	
 		},delay+=150);
-	});	
+	}).mouseover(function(){
+		$(this).animate({
+			left:-150
+		});
+	}).mouseout(function(){
+		$(this).animate({
+			left:-100
+		});
+	});
 });

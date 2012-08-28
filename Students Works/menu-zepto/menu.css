@@ -6,6 +6,7 @@
 nav.menunav {
 	position:absolute;
 	width:500px;
+	margin-top:50px;
 }
 
 nav.menunav menu{
@@ -13,12 +14,20 @@ nav.menunav menu{
 }
 
 nav.menunav li{
+	background-image:url('./images/paper2.jpg');
+	background-position:right;
 	position:relative;
 	display:block;
-	width:150px;
-	height:80px;
-	background-color:orange;
+	width:120px;
+	height:60px;
 	border-radius:12px;
 	margin-bottom:2px;
-	left:-150px;
+	left:-120px;
+}
+nav.menunav span{
+	width:48px;
+	height:48px;
+	position:absolute;
+	left:60px;
+	top:5px;
 }

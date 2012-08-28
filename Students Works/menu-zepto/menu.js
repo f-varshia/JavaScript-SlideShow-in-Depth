@@ -4,16 +4,16 @@ $(function(){
 		var that=this;
 		setTimeout(function(){
 			$(that).animate({
-				left:-100	
+				left:-40	
 			},500,'ease-out');	
 		},delay+=150);
 	}).mouseover(function(){
 		$(this).animate({
-			left:-150
-		});
+			left:-60,
+		},300,'ease-in');
 	}).mouseout(function(){
 		$(this).animate({
-			left:-100
-		});
+			left:-40
+		},300,'ease-out');
 	});
 });
